@@ -9,7 +9,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ActivityErrors extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'message' => 'string',
 
 	];

@@ -23,7 +23,7 @@ class Counts extends \PHPFUI\ConstantContact\Base
 	 *
 	 * @param string $include Use to return the total number of new contact subscribers in the results.
 	 */
-	public function get(?string $include = null) : array
+	public function get($include = null) : array
 		{
 
 		if (null !== $include)

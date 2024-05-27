@@ -15,7 +15,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class PhoneNumber extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'phone_number_id' => '\PHPFUI\ConstantContact\UUID',
 		'phone_number' => 'string',
 		'kind' => 'string',
@@ -26,7 +26,7 @@ class PhoneNumber extends \PHPFUI\ConstantContact\Definition\Base
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'phone_number' => 25,
 
 	];

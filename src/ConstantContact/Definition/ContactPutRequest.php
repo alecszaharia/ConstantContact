@@ -23,7 +23,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ContactPutRequest extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'email_address' => '\PHPFUI\ConstantContact\Definition\EmailAddressPut',
 		'first_name' => 'string',
 		'last_name' => 'string',
@@ -42,7 +42,7 @@ class ContactPutRequest extends \PHPFUI\ConstantContact\Definition\Base
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'first_name' => 50,
 		'last_name' => 50,
 		'job_title' => 50,

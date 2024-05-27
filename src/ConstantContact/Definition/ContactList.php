@@ -16,7 +16,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ContactList extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'list_id' => '\PHPFUI\ConstantContact\UUID',
 		'name' => 'string',
 		'description' => 'string',

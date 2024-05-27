@@ -12,7 +12,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class SegmentMaster extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'name' => 'string',
 		'segment_id' => 'int',
 		'created_at' => '\PHPFUI\ConstantContact\DateTime',

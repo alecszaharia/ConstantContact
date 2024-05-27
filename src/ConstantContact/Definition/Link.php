@@ -9,7 +9,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class Link extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'Link' => '\PHPFUI\ConstantContact\Definition\Link',
 
 	];

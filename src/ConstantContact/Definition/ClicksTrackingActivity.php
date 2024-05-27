@@ -19,7 +19,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ClicksTrackingActivity extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'contact_id' => '\PHPFUI\ConstantContact\UUID',
 		'campaign_activity_id' => '\PHPFUI\ConstantContact\UUID',
 		'tracking_activity_type' => 'string',

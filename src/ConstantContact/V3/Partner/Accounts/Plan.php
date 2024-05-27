@@ -78,7 +78,7 @@ class Plan extends \PHPFUI\ConstantContact\Base
 
 If updating from a `TRIAL` plan (`plan_type`) to another type of billing plan, you have the option to update the day of month (`billing_day_of_month`) in which to bill the client account. Valid values include `1` through to and including `31`. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and `plan_type` enum values will continue to be supported.
 	 */
-	public function put(string $encoded_account_id, ?\PHPFUI\ConstantContact\Definition\PlanInfo $body = null) : array
+	public function put(string $encoded_account_id, $body = null) : array
 		{
 
 		return $this->doPut(['encoded_account_id' => $encoded_account_id, 'body' => $body->getData(), ]);

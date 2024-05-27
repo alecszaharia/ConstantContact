@@ -23,7 +23,7 @@ class Segments extends \PHPFUI\ConstantContact\Base
 	 * @param string $limit The number of segments to return on a page.
 	 * @param string $sort_by Specify the segment sort order to use. Sort by name (`sort_by=name`) in ascending order, or sort by date (`sort_by=date`) in descending order with the most recently updated segments listed first.
 	 */
-	public function get(?string $limit = null, ?string $sort_by = null) : array
+	public function get( $limit = null,  $sort_by = null) : array
 		{
 
 		return $this->doGet(['limit' => $limit, 'sort_by' => $sort_by, ]);

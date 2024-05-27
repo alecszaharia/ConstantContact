@@ -11,7 +11,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class CrossReference extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'v2_email_campaign_id' => 'string',
 		'campaign_id' => '\PHPFUI\ConstantContact\UUID',
 		'campaign_activity_id' => '\PHPFUI\ConstantContact\UUID',

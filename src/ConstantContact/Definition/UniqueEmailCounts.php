@@ -16,7 +16,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class UniqueEmailCounts extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'sends' => 'int',
 		'opens' => 'int',
 		'clicks' => 'int',

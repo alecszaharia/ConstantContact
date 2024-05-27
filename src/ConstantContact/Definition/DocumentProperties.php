@@ -23,7 +23,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class DocumentProperties extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'style_content' => 'string',
 		'letter_format' => 'string',
 		'greeting_salutation' => 'string',
@@ -42,7 +42,7 @@ class DocumentProperties extends \PHPFUI\ConstantContact\Definition\Base
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'style_content' => 150000,
 		'greeting_salutation' => 50,
 		'greeting_secondary' => 1500,

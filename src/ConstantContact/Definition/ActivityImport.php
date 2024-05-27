@@ -26,7 +26,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ActivityImport extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'activity_id' => '\PHPFUI\ConstantContact\UUID',
 		'state' => 'string',
 		'started_at' => '\PHPFUI\ConstantContact\DateTime',

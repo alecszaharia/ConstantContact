@@ -36,7 +36,7 @@ class ContactList extends \PHPFUI\ConstantContact\Base
 	 * @param string $list_id The system generated ID that uniquely identifies a contact list.
 	 * @param string $include_membership_count Returns the total number of contacts per list that meet your selection criteria. Set the `include_membership_count` to `active`, to count only active contacts, or `all` to include all contacts in the count.
 	 */
-	public function get(string $list_id, ?string $include_membership_count = null) : array
+	public function get(string $list_id,  $include_membership_count = null) : array
 		{
 
 		if (null !== $include_membership_count)

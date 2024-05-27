@@ -10,7 +10,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class WebhooksSubscriptionPutResp extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'topic_id' => 'int',
 		'hook_uri' => 'string',
 

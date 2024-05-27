@@ -28,7 +28,7 @@ class Accounts extends \PHPFUI\ConstantContact\Base
 	 * @param string $limit The number of client accounts to return on each page of results. The default value is `50`. Entering a `limit` value less than the minimum (`10`) or greater than the maximum (`50`) is ignored and the system uses the default values. Depending on the `limit` you specify, the system determines the `offset` parameter to use (number of records to skip) and includes it in the link used to get the next page of results.
 	 * @param string $account_type Filters client account results by account type: `all` (default), `managed`, or `unmanaged`. Excluding the `account_type` query parameter returns all client accounts for the partner.
 	 */
-	public function get(?string $offset = null, ?string $limit = null, ?string $account_type = null) : array
+	public function get($offset = null, $limit = null, $account_type = null) : array
 		{
 
 		if (null !== $account_type)

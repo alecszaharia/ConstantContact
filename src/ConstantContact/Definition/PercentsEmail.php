@@ -17,7 +17,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class PercentsEmail extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'bounce' => 'int',
 		'click' => 'int',
 		'desktop_click' => 'int',

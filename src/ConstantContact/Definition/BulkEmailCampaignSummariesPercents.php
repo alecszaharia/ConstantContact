@@ -13,7 +13,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class BulkEmailCampaignSummariesPercents extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'click' => 'int',
 		'open' => 'int',
 		'did_not_open' => 'int',

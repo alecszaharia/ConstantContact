@@ -11,7 +11,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ABTestData extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'alternative_subject' => 'string',
 		'test_size' => 'int',
 		'winner_wait_duration' => 'int',

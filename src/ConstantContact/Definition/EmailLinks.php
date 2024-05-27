@@ -10,7 +10,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class EmailLinks extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'campaign_activity_id' => '\PHPFUI\ConstantContact\UUID',
 		'link_click_counts' => 'array<\PHPFUI\ConstantContact\Definition\EmailLinkClickCount>',
 

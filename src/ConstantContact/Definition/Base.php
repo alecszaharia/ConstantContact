@@ -16,37 +16,37 @@ abstract class Base
 	 * - array&lt;FQN&gt;
 	 * - array of case sensitive string or integer enums
 	 */
-	protected static array $fields = [];
+	protected static $fields = [];
 
 	/**
 	 * @var array<string, int> maximum allowed values. Arrays are size, int and float are values, strings are length.
 	 */
-	protected static array $maxLength = [];
+	protected static $maxLength = [];
 
 	/**
 	 * @var array<string, int> minimum allowed values. Arrays are size, int and float are values, strings are length.
 	 */
-	protected static array $minLength = [];
+	protected static $minLength = [];
 
 	/**
 	 * @var array<string> required fields.
 	 */
-	protected static array $requiredFields = [];
+	protected static $requiredFields = [];
 
 	/**
 	 * @var bool $constructingFromArray set to true if we are constructing from an array so we don't type check for objects
 	 */
-	private bool $constructingFromArray = false;
+	private $constructingFromArray = false;
 
   /**
    * $var array<string, mixed> the actual object data by field name.
    */
-	private array $data = [];
+	private $data = [];
 
 	/**
 	 * @var array<string, bool> supported scalars
 	 */
-	private static array $scalars = [
+	private static $scalars = [
 		'bool' => true,
 		'float' => true,
 		'int' => true,
@@ -57,7 +57,7 @@ abstract class Base
   /**
    * @var array<string, bool> indicates which values are set to reduce data output.
    */
-	private array $setFields = [];
+	private $setFields = [];
 
 	public function __construct(array $initialValues = [])
 		{
@@ -65,7 +65,7 @@ abstract class Base
 			{
 			$actualField = $field;
 
-			if (\str_starts_with($field, 'cf_'))
+			if (\strpos($field, 'cf_')===0)
 				{
 				$field = 'cf:custom_field_name';
 				}
@@ -84,7 +84,7 @@ abstract class Base
 				}
 			elseif (! \is_array($type) && ! isset(self::$scalars[$type]))
 				{
-				if (\str_starts_with($type, 'array'))
+				if (\strpos($type, 'array')===0)
 					{
 					$this->data[$actualField] = [];
 					}
@@ -103,7 +103,7 @@ abstract class Base
 		{
 		$actualField = $field;
 
-		if (\str_starts_with($field, 'cf_'))
+		if (\strpos($field, 'cf_')===0)
 			{
 			$field = 'cf:custom_field_name';
 			}
@@ -125,7 +125,7 @@ abstract class Base
 		{
 		$actualField = $field;
 
-		if (\str_starts_with($field, 'cf_'))
+		if (\strpos($field, 'cf_')===0)
 			{
 			$field = 'cf:custom_field_name';
 			}
@@ -136,7 +136,7 @@ abstract class Base
 			throw new \PHPFUI\ConstantContact\Exception\InvalidField(static::class . "::{$actualField} is not a valid field");
 			}
 
-		$type = \get_debug_type($value);
+		$type = \gettype($value);
 
 		if (\is_array($expectedType))
 			{
@@ -149,7 +149,7 @@ abstract class Base
 			{
 			$expectedType = \trim($expectedType, '\\');
 
-			if ('array' == $type && \str_starts_with($expectedType, 'array'))
+			if ('array' == $type && \strpos($expectedType, 'array')===0)
 				{
 				$arrayStart = \strpos($expectedType, '<');
 
@@ -162,7 +162,7 @@ abstract class Base
 
 					foreach ($value as $index => $element)
 						{
-						$elementType = \get_debug_type($element);
+						$elementType = \gettype($element);
 
 						// convert members of the array to the correct type if not a standard type
 						if ($convertToObjects && ! \is_object($element))
@@ -189,7 +189,7 @@ abstract class Base
 			{
 			$minLength = static::$minLength[$field];
 
-			if ('array' == $type && \str_starts_with($expectedType, 'array'))
+			if ('array' == $type && \strpos($expectedType, 'array')===0)
 				{
 				if (\count($value) < $minLength)
 					{
@@ -210,7 +210,7 @@ abstract class Base
 			{
 			$maxLength = static::$maxLength[$field];
 
-			if ('array' == $type && \str_starts_with($expectedType, 'array'))
+			if ('array' == $type && \strpos($expectedType, 'array')===0)
 				{
 				if (\count($value) > $maxLength)
 					{

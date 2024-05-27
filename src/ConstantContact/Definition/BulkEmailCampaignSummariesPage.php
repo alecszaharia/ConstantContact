@@ -11,7 +11,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class BulkEmailCampaignSummariesPage extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'bulk_email_campaign_summaries' => 'array<\PHPFUI\ConstantContact\Definition\BulkEmailCampaignSummary>',
 		'aggregate_percents' => '\PHPFUI\ConstantContact\Definition\BulkEmailCampaignSummariesPercents',
 		'_links' => '\PHPFUI\ConstantContact\Definition\ReportingLinks',

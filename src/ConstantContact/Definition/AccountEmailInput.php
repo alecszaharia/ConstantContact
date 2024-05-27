@@ -9,12 +9,12 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class AccountEmailInput extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'email_address' => 'string',
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'email_address' => 80,
 
 	];

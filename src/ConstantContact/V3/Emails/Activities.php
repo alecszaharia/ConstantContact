@@ -26,7 +26,7 @@ class Activities extends \PHPFUI\ConstantContact\Base
 	 * @param string $campaign_activity_id The unique ID for an email campaign activity.
 	 * @param string $include Use the `include` query parameter to enter a comma separated list of additional email campaign activity properties for the V3 API to return. Valid values are `physical_address_in_footer`, `permalink_url`, `html_content`, and `document_properties`.
 	 */
-	public function get(string $campaign_activity_id, ?string $include = null) : array
+	public function get(string $campaign_activity_id, $include = null) : array
 		{
 
 		if (null !== $include)

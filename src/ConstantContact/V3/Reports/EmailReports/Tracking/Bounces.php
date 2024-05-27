@@ -29,7 +29,7 @@ class Bounces extends \PHPFUI\ConstantContact\Base
 	 * @param array $bounce_code To return results for a specific bounce code, select the `bounce_code` from the drop-down list. To return results for multiple codes, repeat the bounce code parameter for each. For example, to return results for bounce codes `B` and `D` use `bounce_code=B&bounce_code=D`.
 	 * @param string $limit The number of tracking activities to return on a page.
 	 */
-	public function get(string $campaign_activity_id, ?array $bounce_code = null, ?string $limit = null) : array
+	public function get(string $campaign_activity_id, $bounce_code = null, $limit = null) : array
 		{
 
 		return $this->doGet(['campaign_activity_id' => $campaign_activity_id, 'bounce_code' => $bounce_code, 'limit' => $limit, ]);

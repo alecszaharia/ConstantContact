@@ -9,7 +9,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class Result extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'href' => 'string',
 
 	];

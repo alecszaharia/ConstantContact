@@ -12,7 +12,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class BulkEmailCampaignSummary extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'campaign_id' => 'string',
 		'campaign_type' => 'string',
 		'last_sent_date' => '\PHPFUI\ConstantContact\DateTime',

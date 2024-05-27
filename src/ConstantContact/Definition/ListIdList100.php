@@ -9,12 +9,12 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ListIdList100 extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'list_ids' => 'array<\PHPFUI\ConstantContact\UUID>',
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'list_ids' => 100,
 
 	];

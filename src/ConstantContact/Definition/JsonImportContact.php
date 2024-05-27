@@ -46,7 +46,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class JsonImportContact extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'email' => 'string',
 		'first_name' => 'string',
 		'last_name' => 'string',
@@ -88,7 +88,7 @@ class JsonImportContact extends \PHPFUI\ConstantContact\Definition\Base
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'email' => 50,
 		'first_name' => 50,
 		'last_name' => 50,

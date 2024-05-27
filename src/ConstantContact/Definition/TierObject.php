@@ -18,7 +18,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class TierObject extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'usage_type' => 'string',
 		'current_usage' => 'float',
 		'tier' => 'int',

@@ -22,7 +22,7 @@ class Summary extends \PHPFUI\ConstantContact\Base
 	 *
 	 * @param string $extra_fields Use the `extra_fields` query parameter to include the `physical_address` and/or `company_logo` details in the response body. Use a comma separated list to include both (physical_address, company logo).
 	 */
-	public function get(?string $extra_fields = null) : array
+	public function get( $extra_fields = null) : array
 		{
 
 		if (null !== $extra_fields)

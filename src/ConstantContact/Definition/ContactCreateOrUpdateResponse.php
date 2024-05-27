@@ -10,7 +10,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ContactCreateOrUpdateResponse extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'contact_id' => '\PHPFUI\ConstantContact\UUID',
 		'action' => 'string',
 

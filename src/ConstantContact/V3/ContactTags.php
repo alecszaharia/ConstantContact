@@ -30,7 +30,7 @@ class ContactTags extends \PHPFUI\ConstantContact\Base
 	 * @param int $limit Use to specify the number of tag results (up to `500`) to display per page of output. The default is `50`.
 	 * @param bool $include_count Returns the total number of contacts (`contacts_count`) to which a tag applies.
 	 */
-	public function get(?int $limit = null, ?bool $include_count = null) : array
+	public function get( $limit = null,   $include_count = null) : array
 		{
 
 		return $this->doGet(['limit' => $limit, 'include_count' => $include_count, ]);

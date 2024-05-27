@@ -15,7 +15,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class SmsChannel extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'sms_channel_id' => '\PHPFUI\ConstantContact\UUID',
 		'sms_address' => 'string',
 		'dial_code' => 'string',

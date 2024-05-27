@@ -9,7 +9,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class TagsActivityLinks extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'TagsActivityLinks' => '\PHPFUI\ConstantContact\Definition\TagsActivityLinks',
 
 	];

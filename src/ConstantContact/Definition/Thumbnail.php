@@ -11,7 +11,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class Thumbnail extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'width' => 'int',
 		'height' => 'int',
 		'url' => 'string',

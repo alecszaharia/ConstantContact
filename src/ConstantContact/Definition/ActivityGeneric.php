@@ -16,7 +16,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ActivityGeneric extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'activity_id' => 'string',
 		'state' => 'string',
 		'created_at' => '\PHPFUI\ConstantContact\DateTime',

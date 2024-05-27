@@ -29,7 +29,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ContactResource extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'contact_id' => '\PHPFUI\ConstantContact\UUID',
 		'email_address' => '\PHPFUI\ConstantContact\Definition\EmailAddress',
 		'first_name' => 'string',
@@ -54,7 +54,7 @@ class ContactResource extends \PHPFUI\ConstantContact\Definition\Base
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'first_name' => 50,
 		'last_name' => 50,
 		'job_title' => 50,

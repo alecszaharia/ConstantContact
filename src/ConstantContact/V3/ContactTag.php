@@ -40,7 +40,7 @@ class ContactTag extends \PHPFUI\ConstantContact\Base
 	 * @param string $tag_id The ID that uniquely identifies a tag (UUID format).
 	 * @param bool $include_count Use to include (`true`) or exclude (`false`) the total number of tagged contacts (`contacts_count`) from the results.
 	 */
-	public function get(string $tag_id, ?bool $include_count = null) : array
+	public function get(string $tag_id,   $include_count = null) : array
 		{
 
 		return $this->doGet(['tag_id' => $tag_id, 'include_count' => $include_count, ]);

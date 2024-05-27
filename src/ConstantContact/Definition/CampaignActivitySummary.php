@@ -16,7 +16,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class CampaignActivitySummary extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'campaign_activity_id' => '\PHPFUI\ConstantContact\UUID',
 		'start_on' => '\PHPFUI\ConstantContact\DateTime',
 		'em_bounces' => 'int',

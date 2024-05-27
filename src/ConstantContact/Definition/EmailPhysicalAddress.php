@@ -20,7 +20,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class EmailPhysicalAddress extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'address_line1' => 'string',
 		'address_line2' => 'string',
 		'address_line3' => 'string',

@@ -10,7 +10,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class CampaignStatsQueryResultEmail extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'errors' => 'array<\PHPFUI\ConstantContact\Definition\StatsError>',
 		'results' => 'array<\PHPFUI\ConstantContact\Definition\CampaignStatsResultGenericStatsEmailPercentsEmail>',
 

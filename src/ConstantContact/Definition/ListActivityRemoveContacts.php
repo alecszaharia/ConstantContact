@@ -10,13 +10,13 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ListActivityRemoveContacts extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'source' => '\PHPFUI\ConstantContact\Definition\Source',
 		'list_ids' => 'array<\PHPFUI\ConstantContact\UUID>',
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'list_ids' => 50,
 
 	];

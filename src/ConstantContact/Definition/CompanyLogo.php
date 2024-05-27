@@ -11,7 +11,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class CompanyLogo extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'url' => 'string',
 		'external_url' => 'string',
 		'internal_id' => 'string',

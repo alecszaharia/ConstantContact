@@ -26,7 +26,7 @@ class ContactLists extends \PHPFUI\ConstantContact\Base
 	 * @param string $name Use to get details for a single list by entering the full name of the list.
 	 * @param string $status Use to get lists by status. Accepts comma-separated status values.
 	 */
-	public function get(?int $limit = null, ?bool $include_count = null, ?string $include_membership_count = null, ?string $name = null, ?string $status = null) : array
+	public function get( $limit = null,   $include_count = null,  $include_membership_count = null,  $name = null,  $status = null) : array
 		{
 
 		if (null !== $include_membership_count)

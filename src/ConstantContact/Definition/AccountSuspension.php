@@ -15,7 +15,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class AccountSuspension extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'suspend_plan_id' => 'int',
 		'suspend_plan_group_id' => 'int',
 		'suspend_date' => '\PHPFUI\ConstantContact\DateTime',

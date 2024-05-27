@@ -9,7 +9,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class CrossReferenceResponse extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'xrefs' => 'array<\PHPFUI\ConstantContact\Definition\CrossReference>',
 
 	];

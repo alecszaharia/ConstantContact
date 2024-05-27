@@ -27,7 +27,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class StatsEmail extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'em_bounces' => 'int',
 		'em_clicks' => 'int',
 		'em_clicks_all' => 'int',

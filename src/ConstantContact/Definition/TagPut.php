@@ -9,17 +9,17 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class TagPut extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'name' => 'string',
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'name' => 255,
 
 	];
 
-	protected static array $minLength = [
+	protected static $minLength = [
 		'name' => 1,
 
 	];

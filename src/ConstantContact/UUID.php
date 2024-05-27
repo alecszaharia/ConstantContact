@@ -7,9 +7,12 @@ namespace PHPFUI\ConstantContact;
  */
 class UUID
 	{
-	public function __construct(private string $uuid)
+    private $uuid;
+
+    public function __construct(string $uuid)
 		{
-		if (! \preg_match('/^[a-f\d]{8}(-[a-f\d]{4}){4}[a-f\d]{8}$/i', $uuid))
+            $this->uuid = $uuid;
+            if (! \preg_match('/^[a-f\d]{8}(-[a-f\d]{4}){4}[a-f\d]{8}$/i', $uuid))
 			{
 			throw new \PHPFUI\ConstantContact\Exception\InvalidValue($uuid . ' is not a valid UUID');
 			}

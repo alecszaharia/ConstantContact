@@ -13,7 +13,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ResendToNonOpenersObject extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'resend_subject' => 'string',
 		'delay_days' => 'int',
 		'delay_minutes' => 'int',

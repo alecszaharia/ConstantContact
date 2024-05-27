@@ -10,13 +10,13 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class PhoneNumberPut extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'phone_number' => 'string',
 		'kind' => 'string',
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'phone_number' => 25,
 
 	];

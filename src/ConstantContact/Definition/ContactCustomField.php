@@ -10,13 +10,13 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ContactCustomField extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'custom_field_id' => '\PHPFUI\ConstantContact\UUID',
 		'value' => 'string',
 
 	];
 
-	protected static array $maxLength = [
+	protected static $maxLength = [
 		'value' => 255,
 
 	];

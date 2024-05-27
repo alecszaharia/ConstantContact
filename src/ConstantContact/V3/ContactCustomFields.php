@@ -22,7 +22,7 @@ class ContactCustomFields extends \PHPFUI\ConstantContact\Base
 	 *
 	 * @param int $limit Specifies the number of results displayed per page of output, from 1 - 100, default = 50.
 	 */
-	public function get(?int $limit = null) : array
+	public function get( $limit = null) : array
 		{
 
 		return $this->doGet(['limit' => $limit, ]);

@@ -26,7 +26,7 @@ class SmsCampaignSummaries extends \PHPFUI\ConstantContact\Base
 	 *
 	 * @param string $limit Use to limit the number of results to return on a single page. The default is `50` and the maximum is `500` per page.
 	 */
-	public function get(?string $limit = null) : array
+	public function get($limit = null) : array
 		{
 
 		return $this->doGet(['limit' => $limit, ]);

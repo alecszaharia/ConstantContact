@@ -39,7 +39,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class EmailCampaignActivity extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'campaign_activity_id' => 'string',
 		'campaign_id' => 'string',
 		'role' => 'string',

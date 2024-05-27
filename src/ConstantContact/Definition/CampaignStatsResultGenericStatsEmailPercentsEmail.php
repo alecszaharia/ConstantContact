@@ -12,7 +12,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class CampaignStatsResultGenericStatsEmailPercentsEmail extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'campaign_id' => 'string',
 		'stats' => '\PHPFUI\ConstantContact\Definition\StatsEmail',
 		'percents' => '\PHPFUI\ConstantContact\Definition\PercentsEmail',

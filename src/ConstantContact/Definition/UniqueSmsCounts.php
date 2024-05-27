@@ -13,7 +13,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class UniqueSmsCounts extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'sends' => 'int',
 		'clicks' => 'int',
 		'optouts' => 'int',

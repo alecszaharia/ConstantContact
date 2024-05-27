@@ -14,7 +14,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ContactsCounts extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'total' => 'int',
 		'explicit' => 'int',
 		'implicit' => 'int',

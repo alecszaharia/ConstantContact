@@ -11,7 +11,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ContactCampaignActivitiesSummary extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'contact_id' => '\PHPFUI\ConstantContact\UUID',
 		'campaign_activities' => 'array<\PHPFUI\ConstantContact\Definition\CampaignActivitySummary>',
 		'_links' => '\PHPFUI\ConstantContact\Definition\ReportingLinks',

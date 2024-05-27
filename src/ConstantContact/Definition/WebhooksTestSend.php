@@ -12,7 +12,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class WebhooksTestSend extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'topic_id' => 'int',
 		'hook_uri' => 'string',
 		'topic_name' => 'string',

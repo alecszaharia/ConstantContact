@@ -32,7 +32,7 @@ class Emails extends \PHPFUI\ConstantContact\Base
 	 * @param string $role_code Use the `role_code` query parameter to search for account emails that have a specific role. Each each email address in an account can have multiple roles or no role. Possible values are `CONTACT`, `BILLING`, `REPLY_TO`, `JOURNALING`, or `OTHER`. You can also abbreviate the value of this query parameter and use `C`,`B`,`R`,`J`, or `O`.
 	 * @param string $email_address Use the `email_address` query parameter to search for a specific account email address.
 	 */
-	public function get(?string $confirm_status = null, ?string $role_code = null, ?string $email_address = null) : array
+	public function get( $confirm_status = null,  $role_code = null, $email_address = null) : array
 		{
 
 		if (null !== $confirm_status)

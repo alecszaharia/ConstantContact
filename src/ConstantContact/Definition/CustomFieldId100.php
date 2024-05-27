@@ -9,7 +9,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class CustomFieldId100 extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'custom_field_ids' => 'array<\PHPFUI\ConstantContact\UUID>',
 
 	];

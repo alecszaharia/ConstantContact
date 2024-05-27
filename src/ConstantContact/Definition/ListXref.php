@@ -10,7 +10,7 @@ namespace PHPFUI\ConstantContact\Definition;
  */
 class ListXref extends \PHPFUI\ConstantContact\Definition\Base
 	{
-	protected static array $fields = [
+	protected static $fields = [
 		'sequence_id' => 'string',
 		'list_id' => '\PHPFUI\ConstantContact\UUID',
 

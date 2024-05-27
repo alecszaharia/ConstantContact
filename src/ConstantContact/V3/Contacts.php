@@ -44,7 +44,7 @@ class Contacts extends \PHPFUI\ConstantContact\Base
 	 * @param bool $include_count Set `include_count=true` to include the total number of contacts (`contacts_count`) that meet all search criteria in the response body.
 	 * @param int $limit Specifies the number of results displayed per page of output in the response, from 1 - 500, default = 50.
 	 */
-	public function get(?string $status = null, ?string $email = null, ?string $lists = null, ?string $segment_id = null, ?string $tags = null, ?string $updated_after = null, ?string $updated_before = null, ?string $created_after = null, ?string $created_before = null, ?string $optout_after = null, ?string $optout_before = null, ?string $include = null, ?string $sms_status = null, ?bool $include_count = null, ?int $limit = null) : array
+	public function get( $status = null,  $email = null,  $lists = null,  $segment_id = null,  $tags = null,  $updated_after = null,  $updated_before = null,  $created_after = null,  $created_before = null,  $optout_after = null,  $optout_before = null,  $include = null,  $sms_status = null,   $include_count = null,  $limit = null) : array
 		{
 
 		if (null !== $status)
