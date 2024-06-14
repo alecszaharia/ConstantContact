@@ -121,7 +121,7 @@ abstract class Base
 	/**
 	 * @return mixed value being set to allow for assignment chaining
 	 */
-	public function __set(string $field, mixed $value)
+	public function __set(string $field, $value)
 		{
 		$actualField = $field;
 

@@ -475,7 +475,7 @@ class Client
         return [];
     }
 
-    private function session(string $key, string $value): string
+    private function session(string $key, string $value = null): string
     {
         if ($this->sessionCallback) {
             return \call_user_func($this->sessionCallback, $key, $value);
